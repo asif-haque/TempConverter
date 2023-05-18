@@ -24,13 +24,6 @@ h1 {
     box-shadow: 3px 3px 12px grey;
 }
 
-@media (max-width: 510px) {
-    .container-fluid {
-        width: 100%;
-        border-radius: 0;
-    }
-}
-
 .temp-col {
     margin: 3%;
 }
@@ -61,5 +54,27 @@ input::-webkit-inner-spin-button{
     width: 7rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+
+/* Responsiveness, have to put it at last */
+@media (max-width: 510px) {
+    body {
+        background-color: #B3C890;
+    }
+
+    .container-fluid {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .temp-col {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-bottom: 10%;
+        font-size: 2.5rem;
+    }
 }
 
